@@ -3,6 +3,7 @@
 float Temp = 0;
 u8 Humi = 0;
 
+
 int main()
 {
 	//u8 key_num = 0;
