@@ -2,8 +2,8 @@
 #define _USART1_H_
 
 #include "stm32f10x.h"                  // Device header
-#include "stdio.h"
-#include "string.h"
+#include <stdio.h>
+#include <string.h>
 #include "usart2.h"
 
 #define Max_Size   256

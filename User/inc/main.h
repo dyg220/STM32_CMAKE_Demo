@@ -1,11 +1,10 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
-#define  __arm__				1
-#define  __CC_ARM				1
-#define  __GNUC__				1
-#define USE_STDPERIPH_DRIVER	1
-#define STM32F10X_MD			1
-
+//#define  __arm__				1
+//#define  __CC_ARM				1
+//#define  __GNUC__				1
+//#define USE_STDPERIPH_DRIVER	1
+//#define STM32F10X_MD			1
 
 #include "stm32f10x.h"                  // Device header
 #include "led.h"
