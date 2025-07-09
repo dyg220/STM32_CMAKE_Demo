@@ -101,7 +101,7 @@ void USART1_IRQHandler(void)
 		clear = USART1->DR;
 		(void)clear;
 		USART1_Recv.data[USART1_Recv.index] = '\0';
-		//USART2_SendStr((char*)USART1_Recv.data); //将接收到的数据发送到USART2
+		USART2_SendStr((char*)USART1_Recv.data); //将接收到的数据发送到USART2
 		USART1_Recv.flag = 1;
 		USART1_Recv.index = 0;
 	}

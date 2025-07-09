@@ -13,7 +13,7 @@ int main()
 	Key_Init();
 	Relay_Init();
 	USART1_Config(115200);
-	//USART2_Config(115200);
+	USART2_Config(115200);
 	// dcMotor_Config();
 	// StepMotor_Init();
 	// USART1_SendStr((u8*)"Hello, USART1!\r\n");
@@ -25,7 +25,7 @@ int main()
 	//OLED_ShowImage(0, 16, 16, 16, Diode);
 	OLED_ShowString(0, 0, "1234567890123456", OLED_8X16);
 	OLED_ShowString(0, 16, "1234567890123456", OLED_8X16);
-	OLED_ShowString(0, 32, "你好", OLED_8X16);
+	OLED_ShowString(0, 32, "你好世界", OLED_8X16);
 	OLED_Update();
 	printf("Reset----------1!!!\r\n");
 	delay_ms(2000);
