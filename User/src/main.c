@@ -30,7 +30,7 @@ int main()
 	printf("Reset----------1!!!\r\n");
 	delay_ms(2000);
 	WiFi_Init();
-	RGB_Control(0, 0, 0xff);
+	//RGB_Control(0, 0, 0xff);
 	while (1)
 	{
 		// StepMotor_Control(100, 1);
