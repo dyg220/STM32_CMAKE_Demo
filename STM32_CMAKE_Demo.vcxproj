@@ -183,9 +183,9 @@
   <ItemGroup>
     <None Include=".gitignore" />
     <None Include="CMakeSettings.json" />
-    <None Include="Cmsis\startup_stm32f10x_md.s" />
+    <None Include="Cmsis\startup_stm32f103xb.s" />
     <None Include="README.md" />
-    <None Include="stm32f10x_flash_extsram.ld" />
+    <None Include="STM32F103XX_FLASH.ld" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />

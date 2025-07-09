@@ -40,8 +40,8 @@ include_directories(./STM32F10x_FWLib/inc ./User/inc ./Cmsis ./Hardwear/DCMotor 
 #添加源文件路径,即.c或者.s文件
 file(GLOB_RECURSE SOURCES ./STM32F10x_FWLib/src/*.c ./User/src/*.c ./Hardwear/DCMotor/*.c ./Hardwear/DHT11/*.c ./Hardwear/Infrared/*.c ./Hardwear/KEY/*.c ./Hardwear/LED/*.c ./Hardwear/OLED/*.c ./Hardwear/RELAY/*.c ./Hardwear/RGB/*.c ./Hardwear/StepMotor/*.c ./Hardwear/WiFi/*.c ./Cmsis/*.*)
 
-#添加你的stm32f10x_flash_extsram.ld的连接脚本路径
-set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/stm32f10x_flash_extsram.ld)
+#添加你的STM32F103XX_FLASH.ld的连接脚本路径
+set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103XX_FLASH.ld)
  
 add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map)
 #选择cortex-m3内核
