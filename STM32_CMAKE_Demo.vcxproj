@@ -86,6 +86,10 @@
     <NMakeIncludeSearchPath>D:\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include;STM32F10x_FWLib/inc;User/inc;Cmsis;Hardwear/DCMotor;Hardwear/DHT11;Hardwear/Infrared;Hardwear/KEY;Hardwear/LED;Hardwear/OLED;Hardwear/RELAY;Hardwear/RGB;Hardwear/StepMotor;Hardwear/WiFi</NMakeIncludeSearchPath>
     <NMakePreprocessorDefinitions>__arm__;__CC_ARM;__GNUC__	;USE_STDPERIPH_DRIVER;STM32F10X_MD</NMakePreprocessorDefinitions>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <NMakeIncludeSearchPath>D:\Program Files\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include;.\STM32F10x_FWLib\inc;.\Cmsis;.\User\inc;.\Hardwear\DCMotor;.\Hardwear\DHT11;.\Hardwear\Infrared;.\Hardwear\KEY;.\Hardwear\LED;.\Hardwear\OLED;.\Hardwear\RELAY;.\Hardwear\RGB;.\Hardwear\StepMotor;.\Hardwear\WiFi</NMakeIncludeSearchPath>
+    <NMakePreprocessorDefinitions>__arm__;__CC_ARM;__GNUC__;USE_STDPERIPH_DRIVER;STM32F10X_MD</NMakePreprocessorDefinitions>
+  </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="Cmsis\core_cm3.c" />
     <ClCompile Include="Cmsis\stm32f10x_it.c" />

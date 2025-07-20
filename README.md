@@ -1,6 +1,6 @@
 # STM32_CMAKE_Demo
 #开发环境
-vs2022 + CMake
+vs2017 + CMake
 
 #环境：
 PX4 ubuntu22.04
