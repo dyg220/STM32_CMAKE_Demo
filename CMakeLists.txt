@@ -36,6 +36,7 @@ add_definitions(-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD)
 # 将源代码添加到此项目的可执行文件。
 # add_executable (STM32F103 "User/src/main.c")
 #添加头文件路径，即.h文件
+include_directories(D:\\gcc-arm-none-eabi-9-2019-q4-major-win32\\arm-none-eabi\\include)
 include_directories(./STM32F10x_FWLib/inc ./User/inc ./Cmsis ./Hardwear/DCMotor ./Hardwear/DHT11 ./Hardwear/Infrared ./Hardwear/KEY ./Hardwear/LED ./Hardwear/OLED ./Hardwear/RELAY ./Hardwear/RGB ./Hardwear/StepMotor ./Hardwear/WiFi)
 #添加源文件路径,即.c或者.s文件
 file(GLOB_RECURSE SOURCES ./STM32F10x_FWLib/src/*.c ./User/src/*.c ./Hardwear/DCMotor/*.c ./Hardwear/DHT11/*.c ./Hardwear/Infrared/*.c ./Hardwear/KEY/*.c ./Hardwear/LED/*.c ./Hardwear/OLED/*.c ./Hardwear/RELAY/*.c ./Hardwear/RGB/*.c ./Hardwear/StepMotor/*.c ./Hardwear/WiFi/*.c ./Cmsis/*.*)

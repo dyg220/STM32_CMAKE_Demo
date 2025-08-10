@@ -12,7 +12,7 @@ void TIM2_Config(void)
 
 	TIM_InternalClockConfig(TIM2);//选择内部时钟源
 
-	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct = { 0 };
+        TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct = { 0 };
 	TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;//时钟分频(不用）
 	TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
 	TIM_TimeBaseInitStruct.TIM_Period = 10000 - 1;//   周期10ms
